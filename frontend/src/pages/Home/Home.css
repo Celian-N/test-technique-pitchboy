@@ -10,6 +10,13 @@ align-items: center;
   grid-gap: 20px;
   padding: 30px;
 }
+.movie-container > a{
+  color: black !important;
+  text-decoration: none;
+}
+a:visited{
+  color: black !important;
+}
 
 .movie{
   display: flex;
@@ -18,7 +25,11 @@ align-items: center;
   background: rgb(248, 248, 248);
   border-radius: 10px;
   padding: 10px;
-  
+  transition: all 300ms;
+}
+
+.movie:hover{
+transform: scale(1.02);
 }
 .movie__title{
   font-weight: bold;
