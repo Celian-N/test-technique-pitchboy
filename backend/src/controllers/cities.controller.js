@@ -24,9 +24,10 @@ deleteCityByPostalCode = (postalCode) => {
   );
 
   if (!cityToDelete) return;
-  const newCities = lapostData.filter(
+  const newCities = laposteData.filter(
     (city) => city.fields.code_postal !== postalCode
   );
+
   return cityToDelete;
 };
 module.exports = {

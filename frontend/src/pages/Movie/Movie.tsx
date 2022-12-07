@@ -55,11 +55,12 @@ function Movie() {
           alt={`${selectedMovie.title}'s pic`}
         />
         <div>
-          <span >{selectedMovie.overview}</span>
-          <div style={{marginTop : '30px'}}>
-            Genre : {selectedMovie.genres.map((genre: any) => genre.name).join(', ')}
+          <span>{selectedMovie.overview}</span>
+          <div style={{ marginTop: "30px" }}>
+            Genre :
+            {selectedMovie.genres?.map((genre: any) => genre.name).join(", ")}
           </div>
-          <div style={{marginTop : '30px'}}>
+          <div style={{ marginTop: "30px" }}>
             Date de sortie : {selectedMovie.release_date}
           </div>
         </div>
